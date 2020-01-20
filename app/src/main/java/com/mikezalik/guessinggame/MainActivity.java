@@ -14,16 +14,16 @@ public class MainActivity extends AppCompatActivity {
     int randomNumber;
 
     public void guess(View view) {
-        EditText editText = (EditText) findViewById(R.id.editText);
+        EditText editText = findViewById(R.id.editText);
 
         int guessValue = Integer.parseInt(editText.getText().toString());
 
         String message;
 
         if (guessValue > randomNumber) {
-            message = "The number I'm thinking of is lower";
+            message = "The number I'm thinking of is lower. Try Again!";
         } else if (guessValue < randomNumber) {
-            message = "The number I'm thinking of is higher";
+            message = "The number I'm thinking of is higher. Try Again!";
         } else {
             message = "Correct!";
         }
