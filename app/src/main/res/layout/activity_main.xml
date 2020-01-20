@@ -13,7 +13,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
-        android:text="I'm thinking of a number between 1 and 20..."
+        android:text="@string/i_m_thinking_of_a_number_between_1_and_20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,8 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button"
@@ -38,7 +39,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
-        android:text="Guess!"
+        android:text="@string/guess"
         android:onClick="guess"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

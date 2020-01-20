@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
             message = "The number I'm thinking of is higher. Try Again!";
         } else {
             message = "Correct!";
+
+            Random rand = new Random();
+
+            randomNumber = rand.nextInt(20) + 1;
         }
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
