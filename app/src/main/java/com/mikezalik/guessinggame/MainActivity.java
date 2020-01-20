@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         String message;
 
         if (guessValue > randomNumber) {
-            message = "Lower";
+            message = "The number I'm thinking of is lower";
         } else if (guessValue < randomNumber) {
-            message = "Higher";
+            message = "The number I'm thinking of is higher";
         } else {
             message = "Correct!";
         }
