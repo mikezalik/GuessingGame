@@ -13,6 +13,11 @@ public class MainActivity extends AppCompatActivity {
 
     int randomNumber;
 
+    public void generateRandomNumber() {
+        Random rand = new Random();
+        randomNumber = rand.nextInt(20) + 1;
+    }
+
     public void guess(View view) {
         EditText editText = findViewById(R.id.editText);
 
@@ -26,10 +31,7 @@ public class MainActivity extends AppCompatActivity {
             message = "The number I'm thinking of is higher. Try Again!";
         } else {
             message = "Correct!";
-
-            Random rand = new Random();
-
-            randomNumber = rand.nextInt(20) + 1;
+            generateRandomNumber();
         }
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
@@ -39,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Random rand = new Random();
-        randomNumber = rand.nextInt(20) + 1;
+        generateRandomNumber();
     }
 }
