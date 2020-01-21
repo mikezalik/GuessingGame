@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (guessValue < randomNumber) {
             message = "The number I thought of is higher. Try Again!";
         } else {
-            message = "Correct! Try another number.";
+            message = "Correct! Let's play again.";
             generateRandomNumber();
         }
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
